@@ -40,7 +40,7 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.save
-        redirect_to :action => :show, :id => @product[:id]
+        redirect_to :action => :index
       else
         render :action => :new
       end
