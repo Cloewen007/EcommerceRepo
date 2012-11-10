@@ -38,14 +38,13 @@ class ProductsController < ApplicationController
   def create
     @product = Product.create(params[:product])
 
-    respond_to do |format|
       if @product.save
         redirect_to :action => :index
       else
         render :action => :new
       end
     end
-  end
+
 
   # PUT /products/1
   # PUT /products/1.json
