@@ -1,0 +1,22 @@
+<div>
+    <h3><%= @product.name %></h3>
+    <hr/>
+   <%=image_tag @product.img_url, :width => '100', :align => "left", :hspace => '35'%>
+</div>
+<div>
+<p><b><u>Description :</u></b></p>
+ <p id="move_over"><%= @product.description %></p>
+</div>
+<br/>
+<br/>
+<div>
+   <br/>
+    <p>Quantity On Hand: <%= @product.quantity %>,
+                  Price $<%= @product.price %></p>
+    <hr/>
+</div>
+    <%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
+<br />
+
+
