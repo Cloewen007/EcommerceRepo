@@ -1,4 +1,4 @@
-<h1>Listing orders</h1>
+<h1>Listing All Active orders</h1>
 
 <table>
   <tr>
@@ -6,7 +6,7 @@
     <th>Prod</th>
     <th>Cust</th>
     <th>Orderdate</th>
-    <th>Qty ordered</th>
+    <th>Qty Ordered</th>
     <th></th>
     <th></th>
     <th></th>
@@ -19,8 +19,8 @@
     <td><%= order.cust_id %></td>
     <td><%= order.orderdate %></td>
     <td><%= order.qty_ordered %></td>
-    <td><%= link_to 'Show', order %></td>
-    <td><%= link_to 'Edit', edit_order_path(order) %></td>
+    <td><%= link_to 'Show Order Detials', order %></td>
+    <td><%= link_to 'Edit Order Detals', edit_order_path(order) %></td>
     <td><%= link_to 'Destroy', order, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>

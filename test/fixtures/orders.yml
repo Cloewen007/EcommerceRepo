@@ -2,14 +2,14 @@
 
 one:
   id: 
-  product_id: 
-  customer_id: 
+  prod_id: 
+  cust_id: 
   orderdate: 
-  : 
+  qty_ordered: 1
 
 two:
   id: 
-  product_id: 
-  customer_id: 
+  prod_id: 
+  cust_id: 
   orderdate: 
-  : 
+  qty_ordered: 1
