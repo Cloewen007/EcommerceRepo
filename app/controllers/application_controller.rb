@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  validates_presence_of :name, :description, :price, :category_id
+  
 protected
 
  def require_sudo

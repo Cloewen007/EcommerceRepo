@@ -1,7 +1,5 @@
 class ProductsController < ApplicationController
-
 before_filter :require_sudo, :except =>[:index,:show]
-
   def index
     @products = Product.all
   end
@@ -42,8 +40,8 @@ before_filter :require_sudo, :except =>[:index,:show]
     @product = Product.find(params[:id])
 
       if @product.update_attributes(params[:product])
-        format.html { redirect_to @product, notice: 'Product was successfully updated.' }
-      else
+        redirect_to :action => :index
+        else
         format.html { render action: "edit" }
       end
     end

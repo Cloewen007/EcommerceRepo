@@ -1,15 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  id: 1
-  product_id: 1
-  orderdate: 2012-11-09 15:46:30
-  qty_ordered: 1
-  status: MyString
+  id: 
+  product_id: 
+  customer_id: 
+  orderdate: 
+  : 
 
 two:
-  id: 1
-  product_id: 1
-  orderdate: 2012-11-09 15:46:30
-  qty_ordered: 1
-  status: MyString
+  id: 
+  product_id: 
+  customer_id: 
+  orderdate: 
+  : 
