@@ -52,6 +52,7 @@ before_filter :require_sudo, :except =>[:index,:show]
   def destroy
     @product = Product.find(params[:id])
     @product.destroy
+    redirect_to :action => :index
 
   end
 end

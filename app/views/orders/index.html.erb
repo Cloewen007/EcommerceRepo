@@ -3,10 +3,10 @@
 <table>
   <tr>
     <th>Id</th>
-    <th>Product</th>
-    <th>Customer</th>
+    <th>Prod</th>
+    <th>Cust</th>
     <th>Orderdate</th>
-    <th></th>
+    <th>Qty ordered</th>
     <th></th>
     <th></th>
     <th></th>
@@ -15,10 +15,10 @@
 <% @orders.each do |order| %>
   <tr>
     <td><%= order.id %></td>
-    <td><%= order.product_id %></td>
-    <td><%= order.customer_id %></td>
+    <td><%= order.prod_id %></td>
+    <td><%= order.cust_id %></td>
     <td><%= order.orderdate %></td>
-    <td><%= order. %></td>
+    <td><%= order.qty_ordered %></td>
     <td><%= link_to 'Show', order %></td>
     <td><%= link_to 'Edit', edit_order_path(order) %></td>
     <td><%= link_to 'Destroy', order, confirm: 'Are you sure?', method: :delete %></td>
