@@ -1,4 +1,6 @@
 ObtuseSharkHunters::Application.routes.draw do
+  resources :categories
+
   resources :orders
 
   resources :products
