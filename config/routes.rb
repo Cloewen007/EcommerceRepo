@@ -4,7 +4,10 @@ ObtuseSharkHunters::Application.routes.draw do
   resources :orders
 
   resources :products
+  
+  resources :pages
   match '/about' => 'pages#about'
+  match '/contact' => 'pages#contact'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
