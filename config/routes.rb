@@ -1,4 +1,8 @@
 ObtuseSharkHunters::Application.routes.draw do
+  get "product_user/index"
+
+  get "product_user/show"
+
   resources :categories
 
   resources :orders
@@ -8,6 +12,9 @@ ObtuseSharkHunters::Application.routes.draw do
   resources :pages
   match '/about' => 'pages#about'
   match '/contact' => 'pages#contact'
+  
+  #future pointofref for what the user sees
+    
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
