@@ -1,2 +1,2 @@
-<h1>ProductUser#index</h1>
-<p>Find me in app/views/product_user/index.html.erb</p>
+<%= link_to 'Create New Page', new_page_path%>
+<%= render :partial => 'page', :collection => @pages, :as => 'page' %>

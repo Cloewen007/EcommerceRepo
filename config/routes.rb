@@ -1,4 +1,8 @@
 ObtuseSharkHunters::Application.routes.draw do
+  get "user_views/index"
+
+  get "user_views/show"
+
   get "product_user/index"
 
   get "product_user/show"
@@ -10,8 +14,10 @@ ObtuseSharkHunters::Application.routes.draw do
   resources :products
   
   resources :pages
-  match '/about' => 'pages#about'
-  match '/contact' => 'pages#contact'
+  match '/about' => 'product_user#about'
+  match '/contact' => 'product_user#contact'
+  
+  root:to => 'page#index'
   
   #future pointofref for what the user sees
     

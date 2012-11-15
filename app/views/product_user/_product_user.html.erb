@@ -1,0 +1,8 @@
+<h2><%= page.title%></h2>
+<div><%= page.body%></div>
+
+<p>Created At: <%= page.created_at%></p>
+<p>Last Updated: <%= page.updated_at%></p>
+<div>
+<% link_to 'Products', page_path(page) %>
+</div>
