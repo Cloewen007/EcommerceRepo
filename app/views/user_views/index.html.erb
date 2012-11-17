@@ -1,2 +1,7 @@
-<h1>UserViews#index</h1>
-<p>Find me in app/views/user_views/index.html.erb</p>
+<%=image_tag 'SHARK05.jpg', :width => '100', :align => "left", :hspace => '15'%>
+<h1>All Obtuse Shark Hunting Products</h1>
+<%= link_to 'About Obtuse Shark Hunters Incorporated', about_path%>
+<%= link_to 'Contact Us', contact_path%>
+<br/>
+<br/>
+<%= render :partial => 'user_views', :collection => @products, :as => 'product' %>
