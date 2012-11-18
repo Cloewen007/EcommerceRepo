@@ -1,4 +1,4 @@
-class CustomerController < ApplicationController
+class CustomersController < ApplicationController
   def index
     @customers = Customer.all
   end
@@ -21,7 +21,7 @@ class CustomerController < ApplicationController
   def create
     @customer = Customer.new(params[:customer])
       if @customer.save
-        ##redirect_to :action => :index
+        format.html  { redirect_to(@customer, :notice => 'Customer was successfully created.') }
       else
          format.html { render :action => "new"}
       end

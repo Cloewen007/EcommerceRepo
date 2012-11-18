@@ -1,4 +1,6 @@
 ObtuseSharkHunters::Application.routes.draw do
+  resources :customers
+
   get "customer/index"
 
   get "customer/show"
@@ -19,7 +21,6 @@ ObtuseSharkHunters::Application.routes.draw do
   
   resources :pages
   
-  resources :customer
   
   
   match '/about' => 'product_user#about'
@@ -27,7 +28,7 @@ ObtuseSharkHunters::Application.routes.draw do
   
   match '/productuser' => 'user_views#index', :as => 'user_view'
   match '/productshow/:id' => 'user_views#show', :as => 'detail', :via => :get
-  match '/customers' => 'customer#index'
+  match '/customers' => 'customers#index'
   
   root:to => 'product#index'
   

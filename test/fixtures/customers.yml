@@ -1,17 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  id: 1
-  name: MyString
-  postalcode: MyString
-  street: MyString
-  city: MyString
-  province: MyString
+  id: 
+  name: 
+  postal_code: 
+  street: 
+  city: 
+  province: 
+  order_id: 1
 
 two:
-  id: 1
-  name: MyString
-  postalcode: MyString
-  street: MyString
-  city: MyString
-  province: MyString
+  id: 
+  name: 
+  postal_code: 
+  street: 
+  city: 
+  province: 
+  order_id: 1
